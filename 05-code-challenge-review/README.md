@@ -36,9 +36,9 @@ We've provided you with a console that you can use to test your code. To enter a
 
 #### `Musical`
 - [ ] `Musical` should have a method `Musical#perform_in_theater` that takes a theater (object) and date (string) as arguments and associates the musical to that theater
-- [ ] `Musical` should have a method `Musical#performances` should return an array of all that musical's performances
-- [ ] `Musical` should have a method `Musical#theaters` that returns an array of all the theaters the musical performs in
+- [X] `Musical` should have a method `Musical#performances` should return an array of all that musical's performances
+- [X] `Musical` should have a method `Musical#theaters` that returns an array of all the theaters the musical performs in
 
 #### `Theater`
-- [ ] `Theater` should have a method `Theater#performances` that lists all the performances that have ever been performed in that theater
-- [ ] `Theater` should have a method `Theater#musicals` that lists all the musicals that have ever been performed in that theater
+- [X] `Theater` should have a method `Theater#performances` that lists all the performances that have ever been performed in that theater
+- [X] `Theater` should have a method `Theater#musicals` that lists all the musicals that have ever been performed in that theater

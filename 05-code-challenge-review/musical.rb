@@ -1,3 +1,7 @@
+require "pry"
+require "require_all"
+require_all '../05-code-challenge-review'
+
 class Musical
   attr_accessor :name
   attr_reader :setting_city
@@ -27,4 +31,24 @@ class Musical
     Performance.new(date, self, theater)
   end
 
+  def performances
+    # binding.pry
+    Performance.all.collect do |per| 
+      if per.musical == self 
+        per 
+      end
+    end
+  end
+  # binding.pry
+
+  def theaters
+    the=[]
+    Performance.all.select do |per|
+      if per.musical == self
+        the << per.theater
+      end  
+    end
+    return the
+  end
+# binding.pry
 end
